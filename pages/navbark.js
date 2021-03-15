@@ -1,6 +1,5 @@
 import {Navbar, NavDropdown, Nav, Form, FormControl, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Link from 'next/Link'
 
 
 
