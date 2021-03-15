@@ -1,6 +1,6 @@
 {
   "name": "nextkalanchoe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Site elabora com react, next on vercel.",
   "main": "index.js",
   "scripts": {
