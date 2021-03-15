@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev"
-  },
+    
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dericsp/nextKalanchoe.git"
@@ -18,8 +19,10 @@
   },
   "homepage": "https://github.com/dericsp/nextKalanchoe#readme",
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "next": "^10.0.8",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1"
   }
 }
