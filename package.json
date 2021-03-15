@@ -1,7 +1,7 @@
 {
   "name": "nextkalanchoe",
   "version": "1.0.0",
-  "description": "",
+  "description": "Site elabora com react, next on vercel.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/dericsp/nextKalanchoe.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Eric Garcia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dericsp/nextKalanchoe/issues"
@@ -26,5 +26,6 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1"
-  }
+  },
+  "devDependencies": {}
 }
