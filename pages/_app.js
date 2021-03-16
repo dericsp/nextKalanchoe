@@ -5,7 +5,7 @@ export default function MyApp({Component, pageProps}) {
 }
 
 
-<style jsx> 
+<style > 
 {
 }
 </style>

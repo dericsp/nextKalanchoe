@@ -1,5 +1,5 @@
-import {Nav, Navbar, NavDropdown, ul, li} from 'react-bootstrap'
-import Image from 'next/image'
+import {Nav, Navbar, NavDropdown, ul, li} from 'react-bootstrap';
+
 
 function Navigation() {
     return (
@@ -9,6 +9,7 @@ function Navigation() {
       </div>
 
   )
+
 }
 
 function Navtop() {
@@ -47,8 +48,8 @@ function Navbottom() {
   return (
 <Navbar className="logotipo">
 		<Navbar.Brand>
-			<Image 
-      src="/images/kalanchoe.png" 
+			<img 
+      src="../images/kalanchoe.png" 
       alt="logotipo Kalanchoê Modas"  
       width={150}
       height={150}

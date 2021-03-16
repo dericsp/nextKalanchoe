@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Navigation from './navbark'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Col, Jumbotron, Row} from 'react-bootstrap';
-import Aplicativo from './_app'
+
 function Home() {
     return (  
         <div>
