@@ -1,18 +1,14 @@
 import { useState } from 'react'
 import Navigation from './navbark'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import {Col, Jumbotron, Row} from 'react-bootstrap';
+import Aplicativo from './_app'
 function Home() {
-
-    return (
-
+    return (  
         <div>
             <Navigation/>
-            <Contador/>
-        </div> 
-    )
-
-
+            </div>
+            )
 }
 
 function Contador() {
@@ -23,10 +19,12 @@ function Contador() {
     }
 
     return(
-        <div>
-            <div>{contador}</div>
-            <button onClick={adicionarContador}>Adicionar</button>
-        </div>
+        <Jumbotron>
+           <Row >
+               <Col align='center'>{contador}</Col></Row>
+               <Row><Col align='center'><button onClick={adicionarContador}>Adicionar</button></Col>
+            </Row>
+        </Jumbotron>
     )
 }
 
