@@ -1,8 +1,6 @@
 import {Nav, Navbar, NavDropdown, Form, FormControl, Button, ul, li} from 'react-bootstrap';
 import Image from 'next/image'
 import Link from 'next/link'
-import { faComments } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Navigation() {
     return (
@@ -21,12 +19,12 @@ function Navtop() {
 	<Nav className="navbar navbar-default navbar-fixed-top">
 
   <div className="btn-group btn-group-justified tamanhoMax" role="group">
-  <a href="https://api.whatsapp.com/send?phone=5511998305337&amp;text=Gostaria%20de%20obter%20maiores%20informações%20sobre%20a%20revenda%20de%20mercadoria%20em%20consignado."><FontAwesomeIcon className='whats' icon={faComments} /></a>
-
+  <a className ='justify-content-center' href="https://api.whatsapp.com/send?phone=5511998305337&amp;text=Gostaria%20de%20obter%20maiores%20informações%20sobre%20a%20revenda%20de%20mercadoria%20em%20consignado."><img className='whats' src='/whatsapp.png'/></a>
+{/* 
       <div className="btn-group" role="group">
         <span className="textoImagem"><a href="https://api.whatsapp.com/send?phone=5511998305337&amp;text=Gostaria%20de%20obter%20maiores%20informações%20sobre%20a%20revenda%20de%20mercadoria%20em%20consignado.">WhastApp<br/>11-99830-5337</a></span>
         <span className="textoFonte"><a href="https://api.whatsapp.com/send?phone=5511998305337&amp;text=Gostaria%20de%20obter%20maiores%20informações%20sobre%20a%20revenda%20de%20mercadoria%20em%20consignado."><i className="fa fa-whatsapp" aria-hidden="true"></i></a></span>
-      </div>
+      </div> */}
 
     <div className="btn-group" role="group">
       <span className="textoImagem">Telefone<br/>11-2629-0879</span>

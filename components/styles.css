@@ -148,16 +148,15 @@ ul.nav {
 }
 .whats {
 	color: green;
-	float: right;
-	font-size: 50px;
+	/* float: right; */
 	position: fixed;
-    top: 90%;
-    /*	right: 0%;*/
-    left: 75%;
-    min-width: 160px;
+	height: 10vh;
+    bottom: 5%;
+	right: 3%;
     z-index: 4;
 
 }
+
 .index {
 	/*	border-radius: 25%;*/
 	max-height: 50vh;
