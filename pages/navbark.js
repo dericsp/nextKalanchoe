@@ -70,27 +70,16 @@ function Navbottom() {
 	</Navbar>,
 
 <Navbar expand="lg">
-<Navbar.Brand>
-			<img 
-      src="/kalanchoe.png"
-      alt="logotipo Kalanchoê Modas"  
-      className='img-fluid logo'
-      />
-		</Navbar.Brand>
+  <Navbar.Brand>
+    <img src="/kalanchoe.png" alt="logotipo Kalanchoê Modas" className='img-fluid logo'/>
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-<Navbar.Collapse id="basic-navbar-nav">
-  <Nav className="mr-auto navbar">
-    <Link href="/"><a>Home</a></Link>
-    <Link href="/seja-uma-revendedora-de-roupas-femininas"><a className=''>Seja uma revendedora</a></Link>
-    {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-      <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-      <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-      <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-      <NavDropdown.Divider />
-      <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-    </NavDropdown> */}
-  </Nav>
-</Navbar.Collapse>
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="mr-auto navbar">
+        <Link href="/"><a>Home</a></Link>
+        <Link href="/seja-uma-revendedora-de-roupas-femininas"><a className=''>Seja uma revendedora</a></Link>
+      </Nav>
+    </Navbar.Collapse>
 </Navbar>
     )
 }
