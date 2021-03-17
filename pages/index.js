@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Navigation from './navbark'
-import {Col, Jumbotron, Row} from 'react-bootstrap';
-
+import {Col, Row, Image, ListGroup} from 'react-bootstrap';
+import Link from 'next/link'
 
 function Home() {
     return (  
@@ -17,12 +17,9 @@ function IndexPage() {
     return(
         <div className='container-fluid principal'>
             <Row>
-                <Col data-ride="carousel" >
-                    <div className="carousel-inner" role="listbox">
-                        <div className="text-center">
-                            <a href="formulario-contato.html"><img className="index img-fluid" src="/banner2.jpg" alt="banner kalanchoê"/></a>
-					    </div>
-				    </div>
+                <Col align='center' >
+                    <Link href="formulario-contato.html"><a><Image className="index img-fluid" src="/banner2.jpg" alt="banner kalanchoê"/></a></Link>
+					
 			</Col>
 		</Row>
         <div className="container-fluid textos">
@@ -38,8 +35,22 @@ function IndexPage() {
 			<h4>A Kalanchoê possui equipe de vendas em várias cidades, dentre elas:</h4>
 
 		</div>
-		<Row className='container-fluid'>
-			<Col align='center' className="row tabelaCidades">
+		<Row className="justify-content-center" >
+            <ListGroup horizontal variant="flush">
+                <ListGroup>
+                    <ListGroup.Item>Mogi das Cruzes</ListGroup.Item>
+                    <ListGroup.Item>Suzano</ListGroup.Item>
+                    <ListGroup.Item>Arujá</ListGroup.Item>
+                </ListGroup>
+            </ListGroup>
+            <ListGroup horizontal variant="flush">
+                <ListGroup >
+                    <ListGroup.Item>Jacareí</ListGroup.Item>
+                    <ListGroup.Item>São José dos Campos</ListGroup.Item>
+                    <ListGroup.Item>Taubaté</ListGroup.Item>
+                </ListGroup>
+            </ListGroup>
+			{/* <Col align='center' className="row tabelaCidades">
 				<div className="col-sm-3">Mogi das Cruzes</div>
 				<div className="col-sm-3">Suzano</div>
 				<div className="col-sm-3">Arujá</div>
@@ -56,25 +67,25 @@ function IndexPage() {
 				<div className="col-6 col-sm-3">Sumaré</div>
 				<div className="col-6 col-sm-3">Hortolândia</div>
 
-			</Col>
+			</Col> */}
 		</Row>
 		<div className="container colunas">
 			<Row>
 				<Col align='center'>
 					<div>
-						<img  src="/mulher.jpg" alt="kalanchoê foto mulher relogio"/>
+						<img src="/mulher.jpg" alt="kalanchoê foto mulher relogio"/>
 						<div className="caption">
 							<h3>Horário flexível</h3>
-							<p>Você determina qual o período do dia e quantas horas deseja dedicar para atender seus clientes. Isso facilita sua vida, pois você pode conciliar essa atividade com outros afazeres, profissionais ou pessoais. Isso é independência.</p>
+							<p className='justif'>Você determina qual o período do dia e quantas horas deseja dedicar para atender seus clientes. Isso facilita sua vida, pois você pode conciliar essa atividade com outros afazeres, profissionais ou pessoais. Isso é independência.</p>
 						</div>
 					</div>
 				</Col>
 				<Col align='center'>
-					<div className="thumbnail">
+					<div>
 						<img src="/mulherRoupa.jpg" alt="kalanchoê foto mulher roupas"/>
 						<div className="caption">
 							<h3>Novidades toda semana</h3>
-							<p>A Kalanchoê ao longo de toda semana, abastece seu show room com novidades, seguindo as tendências da estação e o estilo da marca, caracterizado pela ampla varidade de modelos e cores, com produtos atuais, arrojados, práticos e confortáveis. Isso é mais varidade para o seu cliente.</p>
+							<p className='jutif'>A Kalanchoê ao longo de toda semana, abastece seu show room com novidades, seguindo as tendências da estação e o estilo da marca, caracterizado pela ampla varidade de modelos e cores, com produtos atuais, arrojados, práticos e confortáveis. Isso é mais varidade para o seu cliente.</p>
 						</div>
 					</div>
 				</Col>
