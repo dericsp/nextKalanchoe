@@ -1,7 +1,7 @@
-import { useState } from 'react'
 import Navigation from './navbark'
 import {Col, Row, Image, ListGroup} from 'react-bootstrap';
-import Link from 'next/link'
+import Link from 'next/link';
+
 
 function Home() {
     return (  
@@ -15,8 +15,9 @@ function Home() {
 function IndexPage() {
 
     return(
+        
         <div className='container-fluid principal'>
-            <Row>
+   <Row>
                 <Col align='center' >
                     <Link href="formulario-contato.html"><a><Image className="index img-fluid" src="/banner2.jpg" alt="banner kalanchoê"/></a></Link>
 					
@@ -48,24 +49,6 @@ function IndexPage() {
                     <ListGroup.Item>Taubaté</ListGroup.Item>
                 </ListGroup>
             </ListGroup>
-			{/* <Col align='center' className="row tabelaCidades">
-				<div className="col-sm-3">Mogi das Cruzes</div>
-				<div className="col-sm-3">Suzano</div>
-				<div className="col-sm-3">Arujá</div>
-				<div className="col-6 col-sm-3">Jacareí</div>
-				<div className="clearfix hidden-sm-up"></div>
-				<div className="col-6 col-sm-3">São José dos Campos</div>
-				<div className="col-6 col-sm-3">Taubaté</div>
-				<div className="col-6 col-sm-3">Tremembé</div>
-				<div className="col-6 col-sm-3">Pindamonhangaba</div>
-				<div className="clearfix hidden-sm-up"></div>
-				<div className="col-6 col-sm-3">Campinas</div>
-				<div className="col-6 col-sm-3">Itatiba</div>
-				<div className="col-6 col-sm-3">Valinhos</div>
-				<div className="col-6 col-sm-3">Sumaré</div>
-				<div className="col-6 col-sm-3">Hortolândia</div>
-
-			</Col> */}
 		</Row>
 		<div className="container colunas">
 			<Row>
@@ -78,7 +61,7 @@ function IndexPage() {
 						</div>
 					</div>
 				</Col>
-				<Col align='center'>
+				<Col align='center' className='index'>
 					<div>
 						<img src="/mulherRoupa.jpg" alt="kalanchoê foto mulher roupas"/>
 						<div className="caption">
