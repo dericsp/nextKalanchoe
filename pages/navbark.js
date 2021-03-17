@@ -81,7 +81,7 @@ function Navbottom() {
 <Navbar.Collapse id="basic-navbar-nav">
   <Nav className="mr-auto navbar">
     <Link href="/"><a>Home</a></Link>
-    <Link href="/seja-uma-revendedora-de-roupas-femininas"><a className=''>Seja uma revendedora</a></Link>
+    <Link href="/seja-uma-revendedora-de-roupas-femininas"><a className='navbar'>Seja uma revendedora</a></Link>
     {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
       <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
       <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
