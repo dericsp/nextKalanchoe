@@ -20,7 +20,7 @@ function IndexPage() {
                 <Col data-ride="carousel" >
                     <div className="carousel-inner" role="listbox">
                         <div className="text-center">
-                            <a href="formulario-contato.html"><img className="index" src="/banner2.jpg" alt="banner kalanchoê"/></a>
+                            <a href="formulario-contato.html"><img className="index img-fluid" src="/banner2.jpg" alt="banner kalanchoê"/></a>
 					    </div>
 				    </div>
 			</Col>
