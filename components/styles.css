@@ -149,8 +149,7 @@ ul.nav {
 
 .index {
 	/*	border-radius: 25%;*/
-	width: 55%;
-	/*	height: 40%;*/
+	max-height: 50vh;
 }
 
 .media-object {
@@ -182,7 +181,7 @@ ul.nav {
 }
 
 .textos {
-	/* margin: 3vmax auto auto auto; */
+	/* margin: 3vmax auto auto aut	o; */
 	text-indent: 80px;
 	background-color: white;
 	max-width: 85%;
