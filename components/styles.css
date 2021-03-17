@@ -3,6 +3,7 @@
 body {
 	margin-left: auto;
 	margin-right: auto;
+	width: 90%;
 	max-width: 1800px;
 	background-image: url("../images/fundo.png");
 }
@@ -154,6 +155,10 @@ ul.nav {
     bottom: 5%;
 	right: 3%;
     z-index: 4;
+	background-color: azure;
+	/* border-style: solid; */
+	border-radius: 35%;
+	
 
 }
 
