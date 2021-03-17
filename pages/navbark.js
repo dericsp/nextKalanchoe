@@ -79,7 +79,7 @@ function Navbottom() {
 <Navbar expand="lg">
 <Navbar.Brand>
 			<img 
-      src= "../components/images/kalanchoe.png"
+      src= "../images/kalanchoe.png"
       alt="logotipo Kalanchoê Modas"  
       width={150}
       height={150}
