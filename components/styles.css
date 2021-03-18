@@ -152,16 +152,24 @@ ul.nav {
 	/* float: right; */
 	position: fixed;
 	height: 10vh;
+	min-height: 80px;
     bottom: 5%;
 	right: 3%;
     z-index: 4;
-	background-color: azure;
+	background-color: transparent;
 	/* border-style: solid; */
 	border-radius: 35%;
-	
+	animation: hithere 5s ease infinite;
 
 }
 
+@keyframes hithere {
+	30% { transform: scale(1); }
+	40%, 60% { transform: rotate(-20deg) scale(1); }
+	50% { transform: rotate(20deg) scale(1.2); }
+	70% { transform: rotate(0deg) scale(1.2); }
+	100% { transform: scale(1); }
+  }
 .index {
 	/*	border-radius: 25%;*/
 	max-height: 50vh;
