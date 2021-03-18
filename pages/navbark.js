@@ -36,28 +36,6 @@ function Navtop() {
 
 function Navbottom() {
   return (
-<Navbar className="logotipo">
-
-		<div className="navbar-header">
-			<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationbar">
-				<span className="sr-only">Toggle navigation</span>
-				<span className="icon-bar"></span>
-				<span className="icon-bar"></span>
-				<span className="icon-bar"></span>
-			</button>
-		</div>
-		<div className="collapse navbar-collapse" id="navigationbar">
-
-			<ul className="nav navbar-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="seja-uma-revendedora-de-roupas-femininas.html">Seja uma revendedora</a></li>
-				<li><a href="kalanchoe-modas.html">A Kalanchoê</a></li>
-				<li><a href="depoimentos.html">Depoimentos</a></li>
-				<li><a href="colecao-kalanchoe.html">Coleção</a></li>
-			</ul>
-		</div> 
-	</Navbar>,
-
 <Navbar expand="lg">
   <Navbar.Brand>
     <img src="/kalanchoe.png" alt="logotipo Kalanchoê Modas" className='img-fluid logo'/>
@@ -67,8 +45,8 @@ function Navbottom() {
       <Nav className='mr-auto'>
         <Link href="/"><a className='navbar nav'>Home</a></Link>
         <Link href="/seja-uma-revendedora-de-roupas-femininas"><a className='navbar nav'>Seja uma revendedora</a></Link>
-        <Link href="kalanchoe-modas.html"><a className='navbar nav' >A Kalanchoê</a></Link>
-        <Link href="depoimentos.html"><a className='navbar nav'>Depoimentos</a></Link>
+        <Link href="kalanchoe-modas"><a className='navbar nav' >A Kalanchoê</a></Link>
+        <Link href="depoimentos"><a className='navbar nav'>Depoimentos</a></Link>
       </Nav>
     </Navbar.Collapse>
 </Navbar>

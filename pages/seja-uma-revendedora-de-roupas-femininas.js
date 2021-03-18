@@ -28,16 +28,16 @@ function Revendedora() {
 		<br/>
 		<p className="ano">Condições para ser um(a) consultor(a) :</p>
 		<ul>
-			<li className="paragrafo">Não ter restrições de crédito;</li>
-			<li className="paragrafo">Ser maior de 21 anos.</li>
+			<li >Não ter restrições de crédito;</li>
+			<li >Ser maior de 21 anos.</li>
 		</ul>
 		<p className="ano">Benefícios de ser um(a) consultor(a) :</p>
 		<ul>
-			<li className="paragrafo">Lucratividade de até 35%;</li>
-			<li className="paragrafo">Participar das promoções com prêmios em mercadorias;</li>
-			<li className="paragrafo">Você não faz investimento financeiro;</li>
-			<li className="paragrafo">Horário e dias flexíveis para trabalhar;</li>
-			<li className="paragrafo">Trabalhar com nossa máquina de cartão de crédito;</li>
+			<li >Lucratividade de até 35%;</li>
+			<li >Participar das promoções com prêmios em mercadorias;</li>
+			<li >Você não faz investimento financeiro;</li>
+			<li >Horário e dias flexíveis para trabalhar;</li>
+			<li >Trabalhar com nossa máquina de cartão de crédito;</li>
 		</ul>
 	</Container>
 
