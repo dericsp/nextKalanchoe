@@ -144,9 +144,7 @@ ul.nav {
 	position: relative;
 	font-size: 1.9vmax;
 }
-.justif {
-	text-rendering: auto;
-}
+
 .whats {
 	color: green;
 	/* float: right; */
@@ -157,7 +155,6 @@ ul.nav {
 	right: 3%;
     z-index: 4;
 	background-color: transparent;
-	/* border-style: solid; */
 	border-radius: 35%;
 	animation: hithere 5s ease infinite;
 
@@ -170,17 +167,18 @@ ul.nav {
 	70% { transform: rotate(0deg) scale(1.2); }
 	100% { transform: scale(1); }
   }
+
+
 .index {
-	/*	border-radius: 25%;*/
-	max-height: 50vh;
-	;
+	width: 45vh;
+	
 }
 
 .media-object {
-	margin-left: auto;
-	margin-right: auto;
-	height: auto;
-	width: 55%;
+	/* margin-left: auto;
+	margin-right: auto; */
+	/* height: auto; */
+	width: 19vw;
 	border-radius: 4vmax;
 	border: 3px solid rgb(156, 47, 83);
 }
