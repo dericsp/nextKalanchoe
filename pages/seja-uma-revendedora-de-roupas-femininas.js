@@ -22,9 +22,9 @@ function Revendedora() {
 
 		<p className="paragrafo">Após a aprovação cadastral voce já pode iniciar as vendas, não sendo necessário nenhum investimento financeiro: o que você não conseguir vender, você simplesmente devolve, ganhando comissão sobre as vendas.</p>
 		<br/>
-			<div align='center'>
+			{/* <div align='center'>
 				<img className="media-object" src="/ganhos.jpg" alt="kalanchoê mulher escada ganhos"/>
-			</div>
+			</div> */}
 		<br/>
 		<p className="ano">Condições para ser um(a) consultor(a) :</p>
 		<ul>

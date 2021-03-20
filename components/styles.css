@@ -110,14 +110,15 @@ body {
 
 
 
-.navbar {
+.navLink {
 	width: auto;
 	height: auto;
 	background-color: transparent;
-	margin: 0.05vmax auto auto auto;
+	margin: 0.5vmax 0.4vmax auto 0.5vmax;
 	padding: auto auto auto auto;
 	border: none;
 	float: none;
+	padding-right:3vh;
 	position: relative;
 	max-width: 89%;
 	color: gray;

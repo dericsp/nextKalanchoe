@@ -19,7 +19,7 @@ function IndexPage() {
         <div className='container-fluid principal'>
    <Row>
                 <Col align='center' >
-                    <Link href="formulario-contato.html"><a><Image className="index img-fluid" src="/banner2.jpg" alt="banner kalanchoê"/></a></Link>
+                    <Link href="formulario-contato"><Image className="index img-fluid" src="/banner2.jpg" alt="banner kalanchoê"/></Link>
 					
 			</Col>
 		</Row>
