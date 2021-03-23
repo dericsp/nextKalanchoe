@@ -1,6 +1,6 @@
 import Navigation from './navbark'
 import {Container, Card} from 'react-bootstrap'
-
+import Link from 'next/link'
 function RevendedoraRoupas() {
     return (  
         <div>
@@ -39,6 +39,9 @@ function Revendedora() {
 			<li >Horário e dias flexíveis para trabalhar;</li>
 			<li >Trabalhar com nossa máquina de cartão de crédito;</li>
 		</ul>
+		<div align="center">
+		<Link href="/formulario-contato"><button className="btn btn-success">Cadastre-se</button></Link>
+	</div>
 	</Container>
 
         )

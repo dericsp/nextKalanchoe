@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {useRouter} from 'next/router';
 import {useEffect} from 'react';
 import ReactGA from 'react-ga';
+
 function MyApp ({ Component, pageProps }) {
     const router = useRouter()
-  
     useEffect(() => {
       const handleRouteChange = (url, { shallow }) => {
         ReactGA.set({ page: url })
@@ -21,6 +21,7 @@ function MyApp ({ Component, pageProps }) {
     }, [])
   
     return (
+        
         <Component {...pageProps} />
     )
   }

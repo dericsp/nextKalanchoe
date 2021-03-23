@@ -15,6 +15,11 @@ body {
 
 }
 
+.iframeStyle {
+	border-style: ridge;
+	
+}
+
 /*  .imagemTopo {
     width: 14%;
     position: relative;
