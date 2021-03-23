@@ -1,6 +1,6 @@
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import Navigation from './navbark'
-
+import Iframe from 'react-iframe'
 function Colecao () {
     return (
         <div>
@@ -15,13 +15,12 @@ function FotosInstagram() {
     return (
         <div>        
             <Container fluid>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="instagram-content">
-                            <h3>Confira as fotos da coleção que está em andamento</h3>
-                        </div>
-                    </div>
-                </div> 
+                <Row align='center'>
+                    <Col>
+                    <h3>Confira as fotos da coleção que está em andamento</h3>
+                    <Iframe src="https://embedsocial.com/facebook_album/pro_instagram/8df4e3a8f2c8aca21a4bb43a8c21ea0228a088f9" width='100%' height='600vh'/>
+                    </Col>
+                </Row>
             </Container>
         </div>
     )
