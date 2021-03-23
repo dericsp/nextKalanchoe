@@ -19,7 +19,7 @@ function Formulario() {
   async function onSubmitForm(values) {
 	  let config = {
 		  method: 'post',
-		  url: `http://localhost:3000/api/contact`,
+		  url: `/api/contact`,
 		  headers: {
 			  'Content-Type': 'application/json'
 		  },
@@ -29,7 +29,7 @@ function Formulario() {
 		const response = await axios(config);
 		if(response.status == 200) {
 			reset()
-			
+
 		}
 	} catch (error) {
 		  console.log(error)
