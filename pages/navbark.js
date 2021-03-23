@@ -20,10 +20,18 @@ function NavMenu() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className='mr-auto'>
-          <Link href="/"><a className='navLink'>Home</a></Link>
-          <Link href="/seja-uma-revendedora-de-roupas-femininas"><a className='navLink'>Seja uma revendedora</a></Link>
-          <Link href="/kalanchoe-modas"><a className='navLink'>A Kalanchoê</a></Link>
-          <Link href="/depoimentos" className='navLink'><a className='navLink'>Depoimentos</a></Link>
+          <Link href="/">
+            <a className='navLink'>Home</a>
+          </Link>
+          <Link href="/seja-uma-revendedora-de-roupas-femininas">
+            <a className='navLink'>Seja uma revendedora</a>
+          </Link>
+          <Link href="/kalanchoe-modas">
+            <a className='navLink'>A Kalanchoê</a>
+          </Link>
+          <Link href="/depoimentos" className='navLink'>
+            <a className='navLink'>Depoimentos</a>
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
