@@ -3,6 +3,7 @@ import Navigation from './navbark'
 import {Container, Col, Row, Form} from 'react-bootstrap';
 import axios from 'axios';
 import {useForm} from 'react-hook-form';
+import {useRouter} from 'next/router'
 
 function FormContato() {
     return (
@@ -15,8 +16,10 @@ function FormContato() {
 
 function Formulario() {
 	const {register, handleSubmit, errors, reset} = useForm();
+	const router = useRouter();
 
   async function onSubmitForm(values) {
+document.getElementById('sendButton').disabled = true
 	  let config = {
 		  method: 'post',
 		  url: `/api/contact`,
@@ -28,7 +31,9 @@ function Formulario() {
 	  try {
 		const response = await axios(config);
 		if(response.status == 200) {
+			router.push('/obrigado')
 			reset()
+			document.getElementById('sendButton').disabled = false
 
 		}
 	} catch (error) {
@@ -134,7 +139,7 @@ function Formulario() {
 				</Row>
                 <Col sm align='center'>
                     {/* <button className="btn btn-success btn-send g-recaptcha" data-sitekey="6LcL_F8UAAAAANB-FABG9dkPGN4pagjMpceOCjrf" data-callback={submitForm}> Enviar</button> */}
-                    <input type='submit' value='Submit' />
+                    <input id='sendButton' type='submit' value='Enviar' className="btn btn-success btn-send" />
                     </Col>
 			</Form.Group>
 		</Form>                     
