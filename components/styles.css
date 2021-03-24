@@ -5,7 +5,7 @@ body {
 	margin-right: auto;
 	width: 90%;
 	max-width: 1800px;
-	background-image: url("../images/fundo.png");
+	background-image: url("../public/fundo.webp");
 }
 
 
@@ -204,15 +204,17 @@ ul.nav {
 }
 
 .depoimentos {
-	float: left;
-	width: 10%;
-	margin-right: 2%;
+	left: -10%;
 
 }
 
-.carousel-inner .kalanchoeflor {
-	margin: -5vmax auto auto auto;
-	width: 30vmax;
+.banner{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width: 65%;
+	max-height: 45%;
+
 }
 
 .textos {

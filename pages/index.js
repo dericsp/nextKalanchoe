@@ -1,7 +1,7 @@
 import Navigation from './navbark'
-import {Col, Row, Image, ListGroup} from 'react-bootstrap';
+import {Col, Row, ListGroup, Container} from 'react-bootstrap';
 import Link from 'next/link';
-
+import Image from 'next/image'
 
 function Home() {
     return (  
@@ -16,13 +16,12 @@ function IndexPage() {
 
     return(
         
-        <div className='container-fluid principal'>
-   <Row>
-                <Col align='center' >
-                    <Link href="formulario-contato"><Image className="index img-fluid" src="/banner2.jpg" alt="banner kalanchoê"/></Link>
-					
-			</Col>
-		</Row>
+        <Container align='center'>
+			 <Row className='banner' >
+				 <Col >
+				 	<Link href='/formulario-contato'><Image src="/banner2.webp" alt="banner kalanchoê" width={500} height={400} layout='responsive' /></Link>
+				 </Col>
+			</Row>
         <div className="container-fluid textos">
 			<p className="paragrafo">
 				O seguimento de moda jovem feminina é um dos mercados que mais tem crescido no Brasil. Tornando-se uma revendedora Kalanchoê Modas você vai ter a oportunidade de lucrar vendendo moda feminina de qualidade, preço justo e peças diferenciadas.
@@ -54,7 +53,7 @@ function IndexPage() {
 			<Row>
 				<Col align='center'>
 					<div>
-						<img src="/mulher.jpg" alt="kalanchoê foto mulher relogio"/>
+						<img src="/mulher.webP" alt="kalanchoê foto mulher relogio"/>
 						<div className="caption">
 							<h3>Horário flexível</h3>
 							<p>Você determina qual o período do dia e quantas horas deseja dedicar para atender seus clientes. Isso facilita sua vida, pois você pode conciliar essa atividade com outros afazeres, profissionais ou pessoais. Isso é independência.</p>
@@ -63,7 +62,7 @@ function IndexPage() {
 				</Col>
 				<Col align='center' className='index'>
 					<div>
-						<img src="/mulherRoupa.jpg" alt="kalanchoê foto mulher roupas"/>
+						<img src="/mulherRoupa.webP" alt="kalanchoê foto mulher roupas"/>
 						<div className="caption">
 							<h3>Novidades toda semana</h3>
 							<p>A Kalanchoê ao longo de toda semana, abastece seu show room com novidades, seguindo as tendências da estação e o estilo da marca, caracterizado pela ampla varidade de modelos e cores, com produtos atuais, arrojados, práticos e confortáveis. Isso é mais varidade para o seu cliente.</p>
@@ -72,7 +71,7 @@ function IndexPage() {
 				</Col>
 			</Row>
 		</div>
-	</div>
+	</Container>
     )
 }
 

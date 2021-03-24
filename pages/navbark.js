@@ -20,10 +20,10 @@ function NavMenu() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="cache-control" content="max-age=360000"/>
       </Head>
-      <Link href="https://api.whatsapp.com/send?phone=5511998305337&amp;text=Gostaria%20de%20obter%20maiores%20informações%20sobre%20a%20revenda%20de%20mercadoria%20em%20consignado."><a><img className='whats' src='/whatsapp.png'/></a></Link>
+      <Link href="https://api.whatsapp.com/send?phone=5511998305337&amp;text=Gostaria%20de%20obter%20maiores%20informações%20sobre%20a%20revenda%20de%20mercadoria%20em%20consignado."><a><img className='whats' src='/whatsapp.webp'/></a></Link>
       <Navbar expand="lg">
             <Navbar.Brand href='/'>
-              <img src="/kalanchoe.png" alt="logotipo Kalanchoê Modas" className='img-fluid logo'/>
+              <img src="/kalanchoe.webp" alt="logotipo Kalanchoê Modas" className='img-fluid logo'/>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
