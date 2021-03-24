@@ -19,7 +19,7 @@ function IndexPage() {
         <Container align='center'>
 			 <Row className='banner' >
 				 <Col >
-				 	<Link href='/formulario-contato'><Image src="/banner2.webp" alt="banner kalanchoê" width={500} height={400} layout='responsive' /></Link>
+				 	<Link href='/formulario-contato'><Image src="/banner2.jpg" alt="banner kalanchoê" width={500} height={400} layout='responsive' /></Link>
 				 </Col>
 			</Row>
         <div className="container-fluid textos">
@@ -51,18 +51,18 @@ function IndexPage() {
 		</Row>
 		<div className="container colunas">
 			<Row>
-				<Col align='center'>
+				<Col>
 					<div>
-						<img src="/mulher.webP" alt="kalanchoê foto mulher relogio"/>
+						<Image src="/mulher.jpg" alt="kalanchoê foto mulher relogio" width={300} height={300} />
 						<div className="caption">
 							<h3>Horário flexível</h3>
 							<p>Você determina qual o período do dia e quantas horas deseja dedicar para atender seus clientes. Isso facilita sua vida, pois você pode conciliar essa atividade com outros afazeres, profissionais ou pessoais. Isso é independência.</p>
 						</div>
 					</div>
 				</Col>
-				<Col align='center' className='index'>
+				<Col >
 					<div>
-						<img src="/mulherRoupa.webP" alt="kalanchoê foto mulher roupas"/>
+						<Image src="/mulherRoupa.jpg" alt="kalanchoê foto mulher roupas" width={300} height={300}/>
 						<div className="caption">
 							<h3>Novidades toda semana</h3>
 							<p>A Kalanchoê ao longo de toda semana, abastece seu show room com novidades, seguindo as tendências da estação e o estilo da marca, caracterizado pela ampla varidade de modelos e cores, com produtos atuais, arrojados, práticos e confortáveis. Isso é mais varidade para o seu cliente.</p>

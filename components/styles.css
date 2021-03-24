@@ -5,7 +5,8 @@ body {
 	margin-right: auto;
 	width: 90%;
 	max-width: 1800px;
-	background-image: url("../public/fundo.webp");
+	background-image: url("/fundo.png");
+	padding-bottom: 10%;
 }
 
 
@@ -164,7 +165,7 @@ ul.nav {
 	position: fixed;
 	height: 10vh;
 	min-height: 80px;
-    top: 12%;
+    bottom: 12%;
 	right: 3%;
     z-index: 4;
 	background-color: transparent;
