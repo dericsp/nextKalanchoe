@@ -8,10 +8,12 @@ function MyApp ({ Component, pageProps }) {
     const router = useRouter()
     useEffect(() => {
       const handleRouteChange = (url, { shallow }) => {
+
         ReactGA.set({ page: url })
         ReactGA.pageview(url)
+
       }
-      ReactGA.initialize('UA-66520244-1', { debug: false })
+      ReactGA.initialize( process.env.GOO_ANA, { debug: false })
       ReactGA.set({ page: router.pathname })
       ReactGA.pageview(router.pathname)
       router.events.on('routeChangeComplete', handleRouteChange)
@@ -19,6 +21,7 @@ function MyApp ({ Component, pageProps }) {
         router.events.off('routeChangeComplete', handleRouteChange)
       }
     }, [])
+
   
     return (
         

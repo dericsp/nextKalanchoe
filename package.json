@@ -32,5 +32,8 @@
     "react-ga": "^3.3.0",
     "react-hook-form": "^6.15.5",
     "react-iframe": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/react-gtm-module": "^2.0.0"
   }
 }
