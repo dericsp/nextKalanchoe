@@ -7,6 +7,7 @@ function Home() {
     return (  
         <div>
             <Navigation/>
+
             <IndexPage/>
             </div>
             )
@@ -19,7 +20,7 @@ function IndexPage() {
         <Container align='center'>
 			 <Row className='banner' >
 				 <Col >
-				 	<Link href='/formulario-contato'><Image src="/banner2.jpg" alt="banner kalanchoê" width={500} height={400} layout='responsive' /></Link>
+				 	<Link href='/formulario-contato'><a><Image src="/banner2.jpg" alt="banner kalanchoê" width={500} height={400} layout='responsive'/></a></Link>
 				 </Col>
 			</Row>
         <div className="container-fluid textos">
@@ -32,7 +33,7 @@ function IndexPage() {
 				<p className="paragrafo">
 					Venha fazer parte de nossa equipe, ajudamos você a conquistar seus sonhos.
 				</p>
-			<h4>A Kalanchoê possui equipe de vendas em várias cidades, dentre elas:</h4>
+			<h5>A Kalanchoê possui equipe de vendas em várias cidades, dentre elas:</h5>
 
 		</div>
 		<Row className="justify-content-center" >
@@ -49,28 +50,23 @@ function IndexPage() {
                 </ListGroup>
             </ListGroup>
 		</Row>
-		<div className="container colunas">
-			<Row>
-				<Col>
-					<div>
-						<Image src="/mulher.jpg" alt="kalanchoê foto mulher relogio" width={300} height={300} />
-						<div className="caption">
-							<h3>Horário flexível</h3>
-							<p>Você determina qual o período do dia e quantas horas deseja dedicar para atender seus clientes. Isso facilita sua vida, pois você pode conciliar essa atividade com outros afazeres, profissionais ou pessoais. Isso é independência.</p>
-						</div>
-					</div>
+			<Row className='cardsPagIni'>
+				<Col md={6}>
+						<Image src="/mulher.jpg" alt="kalanchoê foto mulher relogio" width={300} height='auto' lazy='true'/>
+						<h4>Horário flexível</h4>
+					<p className='textos'>
+							Você determina qual o período do dia e quantas horas deseja dedicar para atender seus clientes. Isso facilita sua vida, pois você pode conciliar essa atividade com outros afazeres, profissionais ou pessoais. Isso é independência.
+					</p>
 				</Col>
-				<Col >
-					<div>
-						<Image src="/mulherRoupa.jpg" alt="kalanchoê foto mulher roupas" width={300} height={300}/>
-						<div className="caption">
-							<h3>Novidades toda semana</h3>
-							<p>A Kalanchoê ao longo de toda semana, abastece seu show room com novidades, seguindo as tendências da estação e o estilo da marca, caracterizado pela ampla varidade de modelos e cores, com produtos atuais, arrojados, práticos e confortáveis. Isso é mais varidade para o seu cliente.</p>
-						</div>
-					</div>
+				<Col md={6} >
+						<Image src="/mulherRoupa.jpg" alt="kalanchoê foto mulher roupas" width={300} height='auto' lazy='true'/>
+						<h4>Novidades toda semana</h4>
+
+						<p className="textos">
+							A Kalanchoê ao longo de toda semana, abastece seu show room com novidades, seguindo as tendências da estação e o estilo da marca, caracterizado pela ampla varidade de modelos e cores, com produtos atuais, arrojados, práticos e confortáveis. Isso é mais varidade para o seu cliente.
+						</p>
 				</Col>
 			</Row>
-		</div>
 	</Container>
     )
 }

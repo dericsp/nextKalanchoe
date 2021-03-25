@@ -3,88 +3,16 @@
 body {
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
+	width: 95%;
 	max-width: 1800px;
 	background-image: url("/fundo.png");
 	padding-bottom: 10%;
 }
 
-
-.tamanhoMax {
-	max-width: 90%;
-	margin: 0.3vmax 2vmax auto auto;
-
+.cardsPagIni{
+	padding-top: 5%;
 }
 
-.iframeStyle {
-	border-style: ridge;
-	
-}
-
-/*  .imagemTopo {
-    width: 14%;
-    position: relative;
-    z-index: 10;
-    float: right;
-  }*/
-.mi-social-icon {
-	font-size: 1.5em;
-}
-
-.textoImagem {
-	margin-top: 0.5vmax;
-	font-size: 0.8vmax;
-	text-align: center;
-	float: right;
-	background-color: white;
-}
-
-.textoFonte {
-	font-size: 3vmax;
-	float: right;
-	margin: -0.5vmax 0.2vmax;
-}
-
-.textoImagemW {
-	margin-top: 0.5vmax;
-	font-size: 0.8vmax;
-	text-align: center;
-	position: fixed;
-/*		float: left;*/
-	right: 5%;
-	bottom: 2%;
-}
-
-.textoFonteW {
-	font-size: 5vmax;
-	position: fixed;
-	float: left;
-	right: 4%;
-	bottom: 2%;
-	margin: -0.5vmax 0.2vmax;
-	
-}
-
-.textoImagem a {
-	color: black;
-}
-
-.textoFonte i {
-	color: black;
-}
-
-.textoFonteW .fa-whatsapp {
-	color: white;
-	background-color: green;
-	padding: 15%;
-	border-radius: 100%;
-}
-
-.textoFonte .fa-envelope-o {
-	color: rgb(221, 81, 64);
-	background-color: white;
-
-}
 
 .social {
 	position: relative;
@@ -93,34 +21,11 @@ body {
 
 }
 
-.social .fa-facebook {
-	color: rgb(63, 90, 147);
-	padding-right: 2%;
-}
-
-.social .fa-instagram {
-	color: black;
-}
-
-.textoSocial {
-	position: relative;
-	font-size: 1vmax;
-	padding-top: 2vmax;
-}
-
-.container-fluid {
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-}
-
-
-
 .navLink {
 	width: auto;
 	height: auto;
 	background-color: transparent;
-	margin: 0.5vmax 0.4vmax auto 0.5vmax;
+	margin: 0.5vmax 0.3vmax auto 0.5vmax;
 	padding: auto auto auto auto;
 	border: none;
 	float: none;
@@ -130,7 +35,7 @@ body {
 	color: gray;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bolder;
-	font-size: 1.5vmax;
+	font-size: 1.7vmax;
 	text-decoration: none;
 
 }
@@ -141,35 +46,20 @@ body {
 
 }
 
-.navbar-brand {
-	height: auto;
-	width: 15vmax;
-}
 
 img.logo {
 	width: 100%;
 }
 
-ul.nav {
-	float: none;
-	font-family: 'Oswald', sans-serif;
-	padding-top: 5.25vmax;
-	margin: auto -3vmax auto auto;
-	position: relative;
-	font-size: 1.9vmax;
-}
-
 .whats {
-	color: green;
-	/* float: right; */
+
 	position: fixed;
 	height: 10vh;
 	min-height: 80px;
-    bottom: 12%;
+    bottom: 9%;
 	right: 3%;
     z-index: 4;
 	background-color: transparent;
-	border-radius: 35%;
 	animation: hithere 5s ease infinite;
 
 }
@@ -182,33 +72,6 @@ ul.nav {
 	100% { transform: scale(1); }
   }
 
-
-.index {
-	width: 45vh;
-	
-}
-
-.media-object {
-	/* margin-left: auto;
-	margin-right: auto; */
-	/* height: auto; */
-	width: 19vw;
-	border-radius: 4vmax;
-	border: 3px solid rgb(156, 47, 83);
-}
-
-.elza {
-	float: left;
-	width: 15%;
-	margin-right: 2%;
-
-}
-
-.depoimentos {
-	left: -10%;
-
-}
-
 .banner{
 	margin-left: auto;
 	margin-right: auto;
@@ -218,8 +81,12 @@ ul.nav {
 
 }
 
+.depoimentos {
+	margin: 5% ;
+}
+
 .textos {
-	margin: 3vmax auto auto auto;
+	margin: 3vmax auto 2vmax auto;
 	text-indent: 80px;
 	background-color: white;
 	max-width: 85%;
@@ -227,7 +94,7 @@ ul.nav {
 }
 
 .assinatura {
-	text-align: left;
+	text-align: center;
 	font-weight: bold;
 	font-size: 1.2vmax;
 }
@@ -236,152 +103,17 @@ ul.nav {
 	text-align: center;
 	font-size: 1.6vmax;
 	font-weight: bold;
-}
-
-.tabelaCidades {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 80%;
-	border: none;
-	font-size: 1.2vmax;
-	table-layout: fixed;
 	background-color: white;
 }
 
-.colunas {
-	max-width: 75%;
-	margin-top: 2%
-}
-
-.colunas h3 {
-	text-align: center;
-}
-
-.colunas p {
-	text-align: center;
-}
-
-.colunas img {
-	max-width: 75%;
-	border-radius: 10%;
-}
-
-.colunas .thumbnail {
-	background-color: transparent;
-	border: none;
-	background-color: white;
-
-}
-
-
-.instafeed .col-xs-4 {
-	padding-bottom: 15px;
-	padding-top: 15px;
-}
-
-.instagram-wrap {
-	background: transparent;
-}
-
-.instagram-content h3 {
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	font-size: 12px;
-	font-weight: 700;
-	text-align: center;
-	padding: 50px 0;
-	color: #bbbbbb;
-}
-
-.instagram-contentSeja h3 {
-	text-transform: uppercase;
-	letter-spacing: 0.5em;
-	font-size: 12px;
-	font-weight: 700;
-	text-align: center;
-	padding: 5px 0;
-	/*  color: #bbbbbb; */
-}
-
-.photo-boxSeja {
-
-	margin: 1% 0;
-	width: 100px;
-	height: 100px;
-	overflow: hidden;
-	border: 0.2vmax solid rgb(156, 47, 83);
-}
-
-.photo-boxSeja .image-wrap img {
-	width: 100%;
-}
-
-.photo-boxSeja .image-wrap .likes {
-	position: absolute;
-	bottom: 5px;
-	left: 15px;
-	padding: 5px;
-	background: #000;
-	background: rgba(0, 0, 0, 0.4);
-	color: #FFF;
-}
-
-.photo-boxSeja .description {
-	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
-	background: #FFF;
-	color: #9b9b9b;
-	letter-spacing: 1px;
-	padding: 15px;
-	height: 75px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
 
 .hiddenForm {
 	display: none;
 }
 
-.photo-box {
-
-	margin: 2% auto;
-	width: 280px;
-	height: 280px;
-	overflow: hidden;
-	border: 0.2vmax solid rgb(156, 47, 83);
-}
-
-.photo-box .image-wrap img {
-	width: 100%;
-}
-
-.photo-box .image-wrap .likes {
-	position: absolute;
-	bottom: 5px;
-	left: 15px;
-	padding: 5px;
-	background: #000;
-	background: rgba(0, 0, 0, 0.4);
-	color: #FFF;
-}
-
-.photo-box .description {
-	font-family: "Montserrat", sans-serif;
-	font-size: 12px;
-	background: #FFF;
-	color: #9b9b9b;
-	letter-spacing: 1px;
-	padding: 15px;
-	height: 75px;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-
-.hiddenForm {
-	display: none;
+.iframeStyle {
+	border-style: ridge;
+	
 }
 
 /*# sourceMappingURL=style.css.map */
