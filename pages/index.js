@@ -2,21 +2,22 @@ import Navigation from './navbark'
 import {Col, Row, ListGroup, Container} from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image'
+import React from 'react'
+
 
 function Home() {
     return (  
         <div>
-            <Navigation/>
+            <Navigation />
 
             <IndexPage/>
             </div>
             )
 }
 
-function IndexPage() {
-
+function IndexPage(){
     return(
-        
+		<div>
         <Container align='center'>
 			 <Row className='banner' >
 				 <Col >
@@ -68,6 +69,7 @@ function IndexPage() {
 				</Col>
 			</Row>
 	</Container>
+	</div>
     )
 }
 
