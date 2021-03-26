@@ -11,13 +11,18 @@ gulp.task('minify-css', () => {
       }))
     .pipe(gulp.dest('components'));
   });
-  
-function defaultTask(cb) {
-//     gulp.src('public/*')
-//   .pipe(imagemin())
-//   .pipe(gulp.dest('public/'))
-    
-    cb();
-}
 
-exports.default = defaultTask
+  gulp.task('imagemin', () => {
+    return gulp.src('public/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('public/'))
+
+  })
+  
+// function defaultTask(cb) {
+
+    
+//     cb();
+// }
+
+// exports.default = defaultTask
