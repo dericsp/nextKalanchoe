@@ -21,7 +21,7 @@ function IndexPage(){
         <Container align='center'>
 			 <Row className='banner' >
 				 <Col >
-				 	<Link href='/formulario-contato'><a><Image src="/banner2.jpg" alt="banner kalanchoê" width={500} height={400} layout='responsive'/></a></Link>
+				 	<Link href='/formulario-contato'><a><Image src="/banner2.jpg" alt="banner kalanchoê" width={1.25} height={1} layout='responsive' lazy='true'/></a></Link>
 				 </Col>
 			</Row>
         <div className="container-fluid textos">
@@ -53,16 +53,15 @@ function IndexPage(){
 		</Row>
 			<Row className='cardsPagIni'>
 				<Col md={6}>
-						<Image src="/mulher.jpg" alt="kalanchoê foto mulher relogio" width={300} height='auto' lazy='true'/>
+						<Image className='imagemCanto' src="/mulher.jpg" alt="kalanchoê foto mulher relogio" width={0.1} height={0.05} layout='responsive' lazy='true'/>
 						<h4>Horário flexível</h4>
 					<p className='textos'>
 							Você determina qual o período do dia e quantas horas deseja dedicar para atender seus clientes. Isso facilita sua vida, pois você pode conciliar essa atividade com outros afazeres, profissionais ou pessoais. Isso é independência.
 					</p>
 				</Col>
 				<Col md={6} >
-						<Image src="/mulherRoupa.jpg" alt="kalanchoê foto mulher roupas" width={300} height='auto' lazy='true'/>
+						<Image className='imagemCanto' src="/mulherRoupa.jpg"  alt="kalanchoê foto mulher roupas" width={0.1} height={0.05} layout='responsive' lazy='true'/>
 						<h4>Novidades toda semana</h4>
-
 						<p className="textos">
 							A Kalanchoê ao longo de toda semana, abastece seu show room com novidades, seguindo as tendências da estação e o estilo da marca, caracterizado pela ampla varidade de modelos e cores, com produtos atuais, arrojados, práticos e confortáveis. Isso é mais varidade para o seu cliente.
 						</p>
