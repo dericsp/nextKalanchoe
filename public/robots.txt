@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kalanchoemodas.com.br
+
+# Sitemaps
+Sitemap: https://kalanchoemodas.com.br/sitemap.xml
