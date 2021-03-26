@@ -28,6 +28,7 @@ export default async (req, res) => {
         const emailRes = await transporter.sendMail({
             from: `${emailTo}`,
             to: `${emailTo}`,
+            replyTo: `${email}`,
             subject: `Formulario de contato de ${name} ${surname}`,
             html: `<p><Nova mensagem de correio</p><br>
             <p>Nome: ${name} ${surname}</p>
