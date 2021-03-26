@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://kalanchoemodas.com.br
+Host: https://www.kalanchoemodas.com.br
 
 # Sitemaps
-Sitemap: https://kalanchoemodas.com.br/sitemap.xml
+Sitemap: https://www.kalanchoemodas.com.br/sitemap.xml
