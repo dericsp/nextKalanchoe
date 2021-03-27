@@ -25,7 +25,7 @@ function NavMenu() {
         <meta name="msvalidate.01" content="6717D38C8C1E06C30332CAB9B86158C1" />
 		<title>Kalanchoê Modas - Revender Roupas Femininas</title>
       </Head>
-      <Link href="https://api.whatsapp.com/send?phone=5511998305337&amp;text=Gostaria%20de%20obter%20maiores%20informações%20sobre%20a%20revenda%20de%20mercadoria%20em%20consignado."><a id='whatsappClick' className='whats' target='_blank' rel='noopener noreferrer'><Image src='/whatsapp.png' width={90} height={90}/></a></Link>
+      <Link href="https://api.whatsapp.com/send?phone=5511998305337&amp;text=Gostaria%20de%20obter%20maiores%20informações%20sobre%20a%20revenda%20de%20mercadoria%20em%20consignado."><a className='whats' target='_blank' rel='noopener noreferrer'><Image classname='whats' src='/whatsapp.png' width={90} height={90}/></a></Link>
       <Navbar expand="lg" className='navBarK'>
             <Navbar.Brand >
               <Image src="/kalanchoe.png" alt="logotipo Kalanchoê Modas" className='img-fluid logo' width={150} height={120}/>
