@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {useRouter} from 'next/router';
 import {useEffect} from 'react';
 import ReactGA from 'react-ga';
+import GoogleTagManager from '../components/GoogleTagManager'
 
 function MyApp ({ Component, pageProps }) {
     const router = useRouter()
@@ -23,7 +24,9 @@ function MyApp ({ Component, pageProps }) {
   
     return (
         
-        <Component {...pageProps} />
+          <GoogleTagManager>
+      <Component {...pageProps} />
+    </GoogleTagManager>
     )
   }
   
