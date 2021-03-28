@@ -1,21 +1,18 @@
 
 import Navigation from './navbark'
-import {Container, Col, Row, Form} from 'react-bootstrap';
+import {Container, Col, Row} from 'react-bootstrap';
 import Link from 'next/link'
-import axios from 'axios';
-import {useForm} from 'react-hook-form';
-import {useRouter} from 'next/router'
 
-function error404() {
+function Error404() {
     return (
         <div>
       <Navigation/>
-      <Erro404/>
+      <Erro/>
       </div>
   )
 }
 
-function Erro404() {
+function Erro() {
 
     return (
         <div>        
@@ -23,7 +20,7 @@ function Erro404() {
                 <Row align='center'>
                     <Col>
                     <h4 className='textos'>Essa página não existe use o menu  para ir para alguma de nossas paginas</h4>
-                    < Link href='/'> Ou clique aqui para ir para a nossa Home</Link>
+                    < Link href='/'> Ou clique aqui para ir para a nossa pagina inicial</Link>
                     </Col>
                 </Row>
             </Container>
@@ -31,4 +28,4 @@ function Erro404() {
     )
 }
 
-export default error404
+export default Error404
