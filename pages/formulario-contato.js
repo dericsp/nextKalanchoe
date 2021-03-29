@@ -29,7 +29,7 @@ function Formulario() {
 
   async function onSubmitForm(values) {
 	//   console.log('hi from onsubmitform')
-	//   document.getElementById('sendButton').disabled = true
+	  document.getElementById('sendButton').disabled = true
 	  let config = {
 		  method: 'post',
 		  url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
