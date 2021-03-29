@@ -20,7 +20,7 @@ function Erro() {
                 <Row align='center'>
                     <Col>
                     <h4 className='textos'>Essa página não existe use o menu  para ir para alguma de nossas paginas</h4>
-                    < Link href='/'> Ou clique aqui para ir para a nossa pagina inicial</Link>
+                    <Link href='/'> Ou clique aqui para ir para a nossa pagina inicial</Link>
                     </Col>
                 </Row>
             </Container>

@@ -18,12 +18,6 @@ export default async (req, res) => {
         logger: true,
         debug: false
     });
-    console.log(host)
-    console.log(user)
-    console.log(pass)
-    console.log(port)
-    console.log(email)
-    console.log(emailTo)
     try {
         const emailRes = await transporter.sendMail({
             from: `${emailTo}`,
@@ -42,11 +36,11 @@ export default async (req, res) => {
             <p>Mensagem: ${message}</p>`
             ,
         });
-        console.log('Message Sent', emailRes)
+        // console.log('Message Sent', emailRes)
     } catch (error) {
-        console.log(error.message)
+        // console.log(error.message)
         return process.exit(1)
     }
-    console.log(req.body)
+    // console.log(req.body)
     res.status(200).json(req.body)
 }

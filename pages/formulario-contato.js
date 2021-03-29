@@ -4,12 +4,18 @@ import {Container, Col, Row, Form} from 'react-bootstrap';
 import axios from 'axios';
 import {useForm} from 'react-hook-form';
 import {useRouter} from 'next/router'
+import {GoogleReCaptchaProvider, useGoogleReCaptcha} from 'react-google-recaptcha-v3'
+import React from 'react'
+
 
 function FormContato() {
+	const siteKey = process.env.GOOGLE_RECAPTCHA_SITE_KEY
+
     return (
         <div>
-      <Navigation/>
+			<Navigation/>
       <Formulario/>
+      
       </div>
   )
 }
@@ -19,7 +25,7 @@ function Formulario() {
 	const router = useRouter();
 
   async function onSubmitForm(values) {
-document.getElementById('sendButton').disabled = true
+	  document.getElementById('sendButton').disabled = true
 	  let config = {
 		  method: 'post',
 		  url: `/api/contact`,
@@ -33,14 +39,27 @@ document.getElementById('sendButton').disabled = true
 		if(response.status == 200) {
 			router.push('/obrigado')
 			reset()
-			document.getElementById('sendButton').disabled = false
+			// document.getElementById('sendButton').disabled = false
 
 		}
 	} catch (error) {
 		  console.log(error)
 	  }
-	  
   }
+
+//   const [token, setToken] = React.useState("");
+//   const { executeRecaptcha } = useGoogleReCaptcha()
+//   const clickHandler = async () => {
+// 	  if (!executeRecaptcha) {
+// 		  return;
+// 	  }
+
+// 	  const result = await executeRecaptcha("homepage");
+
+// 	  setToken(result);
+// 	  console.log(token)
+//   };
+
     return (
         <Container>
             <Col>
@@ -140,7 +159,8 @@ document.getElementById('sendButton').disabled = true
                 <Col sm align='center'>
                     {/* <button className="btn btn-success btn-send g-recaptcha" data-sitekey="6LcL_F8UAAAAANB-FABG9dkPGN4pagjMpceOCjrf" data-callback={submitForm}> Enviar</button> */}
                     <input id='sendButton' type='submit' value='Enviar' className="btn btn-success btn-send" />
-                    </Col>
+
+					</Col>
 			</Form.Group>
 		</Form>                     
 		<div className="textos">
@@ -150,11 +170,14 @@ document.getElementById('sendButton').disabled = true
 		</div>
 	</Col>
     </Container>
-
     )
+	
     
 
 
 }
+
+
+
 
 export default FormContato
