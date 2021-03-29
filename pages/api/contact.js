@@ -36,9 +36,9 @@ export default async (req, res) => {
             <p>Mensagem: ${message}</p>`
             ,
         });
-        // console.log('Message Sent', emailRes)
-    } catch (error) {
-        // console.log(error.message)
+        console.log('Message Sent', emailRes.messageId)
+    } catch (err) {
+        console.log(err)
         return process.exit(1)
     }
     // console.log(req.body)

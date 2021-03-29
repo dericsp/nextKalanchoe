@@ -23,10 +23,9 @@ function MyApp ({ Component, pageProps }) {
     [])
   
     return (
-        
-          <GoogleTagManager>
-      <Component {...pageProps} />
-    </GoogleTagManager>
+      <GoogleTagManager>
+        <Component {...pageProps} />
+      </GoogleTagManager>
     )
   }
   

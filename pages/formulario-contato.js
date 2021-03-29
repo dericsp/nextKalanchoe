@@ -9,13 +9,14 @@ import React from 'react'
 
 
 function FormContato() {
-	const siteKey = process.env.GOOGLE_RECAPTCHA_SITE_KEY
-
+	const siteKey = process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY
+	console.log(siteKey)
     return (
         <div>
+			<GoogleReCaptchaProvider reCaptchaKey={siteKey} >
 			<Navigation/>
-      <Formulario/>
-      
+			<Formulario/>
+			</GoogleReCaptchaProvider>
       </div>
   )
 }
@@ -23,18 +24,30 @@ function FormContato() {
 function Formulario() {
 	const {register, handleSubmit, errors, reset} = useForm();
 	const router = useRouter();
+	const [token, setToken] = React.useState("");
+	const { executeRecaptcha } = useGoogleReCaptcha()
 
   async function onSubmitForm(values) {
-	  document.getElementById('sendButton').disabled = true
+	//   console.log('hi from onsubmitform')
+	//   document.getElementById('sendButton').disabled = true
 	  let config = {
 		  method: 'post',
-		  url: `/api/contact`,
+		  url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
 		  headers: {
 			  'Content-Type': 'application/json'
 		  },
 		  data: values
 	  };
+	  if (!executeRecaptcha) {
+		return;
+	}
+
+	const result = await executeRecaptcha("homepage");
+
+	setToken(result);
+	console.log(token)
 	  try {
+		//   console.log('hi from try formulario')
 		const response = await axios(config);
 		if(response.status == 200) {
 			router.push('/obrigado')
@@ -47,18 +60,10 @@ function Formulario() {
 	  }
   }
 
-//   const [token, setToken] = React.useState("");
-//   const { executeRecaptcha } = useGoogleReCaptcha()
-//   const clickHandler = async () => {
-// 	  if (!executeRecaptcha) {
-// 		  return;
-// 	  }
 
-// 	  const result = await executeRecaptcha("homepage");
-
-// 	  setToken(result);
-// 	  console.log(token)
-//   };
+  const clickHandler = async () => {
+	 
+  };
 
     return (
         <Container>
@@ -71,7 +76,6 @@ function Formulario() {
 			    <li>Possuir conta corrente com cartão de crédito ativo;</li>
 		    </ul>
             <Form id="contact-form" onSubmit={handleSubmit(onSubmitForm)}>
-                <div className="messages"></div>
                 <Form.Group>
                     <Row>
                         <Col sm>
