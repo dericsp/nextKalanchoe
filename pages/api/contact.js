@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer'
 
 export default async (req, res) => {
-    const {name, surname, cpf, cidade, email, phone, revende, tempo, restricao, message} = req.body;
+    const { name, surname, cpf, cidade, email, phone, revende, tempo, restricao, message } = req.body;
     const host = process.env.SERVER_MAIL
     const user = process.env.MAIL_USER
     const pass = process.env.MAIL_PASS
@@ -14,10 +14,12 @@ export default async (req, res) => {
         auth: {
             user: `${user}`,
             pass: `${pass}`
-        }, 
+        },
         logger: true,
         debug: false
     });
+
+
     try {
         const emailRes = await transporter.sendMail({
             from: `${emailTo}`,
