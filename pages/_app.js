@@ -21,7 +21,7 @@ function MyApp ({ Component, pageProps }) {
       }
     },
     [])
-  
+    // console.log('myapp')
     return (
         
           <GoogleTagManager>

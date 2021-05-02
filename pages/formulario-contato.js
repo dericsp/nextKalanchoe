@@ -61,7 +61,6 @@ function Formulario() {
 	}, [actionToChange]);
 
 	async function onSubmitForm(values) {
-		//   console.log('hi from onsubmitform')
 		document.getElementById('sendButton').disabled = true
 		document.getElementById('contact-form').hidden = true
 		document.getElementById('spinner').hidden = false
@@ -76,20 +75,16 @@ function Formulario() {
 		};
 
 		try {
-			//   console.log('hi from try formulario')
 			const response = await axios(config);
 			if (response.status == 200) {
 				router.push('/obrigado')
-				reset()
+				// reset()
 				// document.getElementById('sendButton').disabled = false
-
 			}
 		} catch (error) {
 			console.log(error)
 		}
 	}
-
-
 	return (
 		<Container>
 			<Col>

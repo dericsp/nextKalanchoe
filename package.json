@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/dericsp/nextKalanchoe#readme",
   "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "instagram-web-api": "^2.2.2",
