@@ -1,7 +1,7 @@
 {
   "name": "nextkalanchoe",
   "version": "1.0.1",
-  "description": "Site elabora com react, next on vercel.",
+  "description": "Site elaborado com react, next on vercel.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",

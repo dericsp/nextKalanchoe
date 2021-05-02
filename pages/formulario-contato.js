@@ -75,12 +75,12 @@ function Formulario() {
 		};
 
 		try {
-			const response = await axios(config);
-			if (response.status == 200) {
-				router.push('/obrigado')
-				// reset()
-				// document.getElementById('sendButton').disabled = false
-			}
+			await axios(config);
+			router.push('/obrigado')
+			// if (response.status == 200) {
+			// 	// reset()
+			// 	// document.getElementById('sendButton').disabled = false
+			// }
 		} catch (error) {
 			console.log(error)
 		}
