@@ -165,8 +165,8 @@ function Formulario() {
 							<Col sm>
 								<Form.Group>
 									<Form.Label htmlFor="form_restr">Possui alguma restrição de crédito ?</Form.Label>&emsp;
-							<Form.Label><input ref={register} id="form_restr" type="radio" name="restricao" required="required" data-error="Responda Sim ou Não." value="Sim" />&emsp;Sim</Form.Label>&emsp;
-							<Form.Label><input ref={register} id="form_restr" type="radio" name="restricao" required="required" data-error="Responda Sim ou Não." value="Não" />&emsp;Não</Form.Label>
+							<Form.Label><input ref={register} id="form_restr_sim" type="radio" name="restricao" required="required" data-error="Responda Sim ou Não." value="Sim" />&emsp;Sim</Form.Label>&emsp;
+							<Form.Label><input ref={register} id="form_restr_nao" type="radio" name="restricao" required="required" data-error="Responda Sim ou Não." value="Não" />&emsp;Não</Form.Label>
 									<div className="help-block with-errors"></div>
 								</Form.Group>
 							</Col>
